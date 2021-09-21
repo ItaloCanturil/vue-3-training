@@ -3,8 +3,13 @@ import Lifecycle from '@/views/LifeCycleHooks'
 
 const routes = [
   {
+    name: Lifecycle,
     path: '/',
     component: Lifecycle
+  },
+  {
+    path: '/ref',
+    component:  () => import('@/views/FunctionRef')
   }
 ]
 
